@@ -23,25 +23,37 @@ class Room:
         print(self.description)
 
 def main():
-    print("After a long walk you finally arrive at your great grandfather's old house.")
-    print("You had thought it was abandoned but oddly there is one light on in the attic.")
-    print("You enter the house to persue your fortune.")
+    print(("After a long walk you finally arrive at your great grandfather's old house.\n"
+           "You had thought it was abandoned but oddly there is one light on in the attic.\n"
+           "You enter the house to persue your fortune.\n\n"))
     
     entrance = Room()
     reading_room = Room()
     upstairs_landing = Room()
     solarium = Room()
 
-    entrance.description = "To the north lies a grand staircase. To the east a reading room. To the west a solarium."
+    entrance.description = ("To the north lies a grand staircase.\n"
+                            "To the east a reading room.\n"
+                            "To the west a solarium.\n")
     entrance.north = upstairs_landing
     entrance.east = reading_room
     entrance.west = solarium
 
-    reading_room.description = "Wow...that's a lot of books. You see title such as: 'Skinning a Dog: For Work and Play,' 'Demonic Possession for the Neophyte,' and 'How to Win Friends and Influence People.' To the West is the Entrance"
+
+    reading_room.description = ("Wow...that's a lot of books. You see title such as:\n"
+                                "'Skinning a Dog: For Work and Play,'\n"
+                                "'Demonic Possession for the Neophyte, and'\n"
+                                "'How to Win Friends and Influence People.'\n"
+                                "To the West is the Entrance")
     reading_room.west = entrance
 
-    solarium.description = "You imagine the solarium must be far more impressive in the daytime. However, during the day you might not notice that there is a candle burning...Why is there a candle burning? Isn't this house abandoned? To the East is the entrance."
+
+    solarium.description = ("You imagine the solarium must be far more impressive in the daytime.\n"
+                            "However, during the day you might not notice that there is a candle burning\n"
+                            "...Why is there a candle burning? Isn't this house abandoned?\n"
+                            "To the East is the entrance.")
     solarium.east = entrance
+
 
     upstairs_landing.description = "Well, you're upstairs now. To the South is the entrance."
     upstairs_landing.south = entrance
