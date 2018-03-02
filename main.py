@@ -42,7 +42,7 @@ def main():
 
     reading_room.description = ("Wow...that's a lot of books. You see title such as:\n"
                                 "'Skinning a Dog: For Work and Play,'\n"
-                                "'Demonic Possession for the Neophyte, and'\n"
+                                "'Demonic Possession for the Neophyte,' and\n"
                                 "'How to Win Friends and Influence People.'\n"
                                 "To the West is the Entrance")
     reading_room.west = entrance
